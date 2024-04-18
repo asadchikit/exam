@@ -1,0 +1,15 @@
+.cart__left_right {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+
+  .cart__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    gap: 50px;
+  }
+
+  
+}
