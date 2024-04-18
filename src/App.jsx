@@ -3,10 +3,9 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
 import { Routes, Route } from "react-router-dom";
-import { Admin } from "./pages/Admin/Admin";
 import { Favorites } from "./pages/Favorites/Favorites";
-import { YourCart } from "./pages/Yourcart/Yourcart";
-import  Single  from "./pages/Home/Single/Single";
+import { All } from "./pages/All/All"
+import { YourCart } from "./pages/Yourcart/Yourcort";
 
 function App() {
   return (
@@ -14,10 +13,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
         <Route path="/favorite" element={<Favorites />} />
+        <Route path="/all" element={<All />} />
         <Route path="/yourcrad" element={<YourCart />} />
-        <Route path="/product/:id" component={<Single/>} />
       </Routes>
       <Footer />
     </div>

@@ -4,16 +4,16 @@ import customersImg from "../../../assets/images/customers.svg";
 export const CustomersPropis = (item) => {
   return (
     <div>
-      <div className="customers__block">
-        <div className="block__left__right">
-          <div className="block__left">
-            <div className="block__profil">
-              <div className="block__left__logo"></div>
-              <h2 className="block__left__text">{item.name}</h2>
+      <div className="customers_block">
+        <div className="block_left_right">
+          <div className="block_left">
+            <div className="block_profil">
+              <div className="block_left_logo"></div>
+              <h2 className="block_left_text">{item.name}</h2>
             </div>
-            <p className="block__text">{item.text}</p>
+            <p className="block_text">{item.text}</p>
           </div>
-          <div className="block__right">
+          <div className="block_right">
             <img src={customersImg} alt="" />
           </div>
         </div>

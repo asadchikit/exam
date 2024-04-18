@@ -9,13 +9,13 @@ export const Stay = () => {
             Stay in the Loop with <br /> the Latest Trends and Deals!
           </h2>
           <center>
-            <div className="stay__wrapper">
+            <div className="stay_loop">
               <input
-                className="stay__input"
+                className="stay_input"
                 type="text"
                 placeholder="Email address"
               />
-              <button className="stay__btn">Subscribe</button>
+              <button className="stay_btn">Subscribe</button>
             </div>
           </center>
         </div>

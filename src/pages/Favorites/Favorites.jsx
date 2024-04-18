@@ -1,22 +1,20 @@
 import React from "react";
-import { useFavorite } from "../../context/FavoriteContext";
+import { useFavorite } from "../../context/FavariteContext";
 import { MdDeleteForever } from "react-icons/md";
 import { useCart } from "../../context/CartContext";
 import { BiSolidCartDownload } from "react-icons/bi";
 
 export const Favorites = () => {
   const { favorites, removeFromFavorites } = useFavorite();
-  const { cart, addToCart, removeFromCart } = useCart(); // Добавлены методы removeFromCart и cart
+  const { cart, addToCart, removeFromCart } = useCart(); 
 
   const handleRemoveFromFavorites = (id) => {
     removeFromFavorites(id);
   };
 
   const handleAddToCart = (item) => {
-    // Проверяем, есть ли элемент уже в корзине
     const itemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
 
-    // Если элемент уже в корзине, удаляем его из корзины
     if (itemIndex !== -1) {
       removeFromCart(item.id);
     } else {

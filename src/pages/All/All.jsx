@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { Search } from "../Home/Search/Search";
 import loadingImg from "../../assets/images/loading.svg";
-import No from "../../assets/images/No results.jpg";
+import No from "../../assets/images/no.jpg";
 
 export const All = () => {
   const { datas, setDatas } = useStore((state) => ({
@@ -45,17 +45,8 @@ export const All = () => {
     setFilter(filteredData);
   }, [selectedCategory, search, datas]);
 
-  const handleSearch = (value) => {
-    setSearch(value);
-  };
-
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
-  };
-
   return (
     <div>
-      <Search setInputVal={handleSearch} />
       <div className="container">
         <div className="btn">
           <Link to="/">
@@ -63,17 +54,7 @@ export const All = () => {
               <IoIosArrowRoundBack className="back__icon" />
             </button>
           </Link>
-          <select
-            className="option"
-            onChange={handleCategoryChange}
-            value={selectedCategory}
-          >
-            <option value="">Filter by Product</option>
-            <option value="electronics">electronics</option>
-            <option value="jewelery">jewelery</option>
-            <option value="men's clothing">men's clothing</option>
-            <option value="women's clothing">women's clothing</option>
-          </select>
+       
         </div>
 
         {loading ? (

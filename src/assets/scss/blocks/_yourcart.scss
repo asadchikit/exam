@@ -1,15 +1,21 @@
-.cart__left_right {
+.card_info {
   display: flex;
-  align-items: start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 
-  .cart__left {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
-    gap: 50px;
-  }
+    .total_info {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  
 
+
+ 
   
 }
+

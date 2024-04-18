@@ -5,7 +5,7 @@ export const Customers = () => {
   return (
     <section>
       <div className="container">
-        <h2 className="customers__title">Our happy customers</h2>
+        <h2 className="customers_title">Our happy customers</h2>
         <div className="customers">
           <CustomersPropis
             name="Customer A"
@@ -23,18 +23,18 @@ export const Customers = () => {
           />
 
           <CustomersPropis
-            name="Customer A"
+            name="Customer D"
             text="Great product, highly recommended!"
           />
 
           <CustomersPropis
-            name="Customer B"
+            name="Customer E"
             text="Great product, highly recommended!"
           />
 
           <CustomersPropis
-            name="Customer C"
-            text="Yeaaaah! The fastest delivery ever :-D"
+            name="Customer F"
+            text="Yeaaaah! The fastest delivery ever!"
           />
         </div>
       </div>

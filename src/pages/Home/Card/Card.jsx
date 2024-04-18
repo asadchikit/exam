@@ -6,9 +6,9 @@ import { BiSolidCartDownload } from "react-icons/bi";
 import { GrFavorite } from "react-icons/gr";
 import { Search } from "../Search/Search";
 import loadingImg from "../../../assets/images/loading.svg";
-import No from "../../../assets/images/No results.jpg";
+import No from "../../../assets/images/no.jpg";
 import { useCart } from "../../../context/CartContext";
-import { useFavorite } from "../../../context/FavoriteContext";
+import { useFavorite } from "../../../context/FavariteContext";
 
 const Card = () => {
   const { datas, setDatas } = useStore((state) => ({
@@ -38,21 +38,7 @@ const Card = () => {
       });
   }, [setDatas]);
 
-  useEffect(() => {
-    let filteredData = datas;
-    if (selectedCategory) {
-      filteredData = filteredData.filter(
-        (item) => item.category === selectedCategory
-      );
-    }
-    if (search.trim() !== "") {
-      filteredData = filteredData.filter((item) =>
-        item.title.toLowerCase().includes(search.toLowerCase())
-      );
-    }
-    setFilter(filteredData);
-  }, [selectedCategory, search, datas]);
-
+ 
   const handleInputChange = (value) => {
     setSearch(value);
   };
@@ -121,18 +107,8 @@ const Card = () => {
             </div>
           </div>
 
-          <div className="select">
-            <select
-              className="option"
-              onChange={handleCategoryChange}
-              value={selectedCategory}
-            >
-              <option value="">All</option>
-              <option value="electronics">electronics</option>
-              <option value="jewelery">jewelery</option>
-              <option value="men's clothing">men's clothing</option>
-              <option value="women's clothing">women's clothing</option>
-            </select>
+          <div className="view">
+         
 
             <Link to="/all">
               <button className="card_info_btn">

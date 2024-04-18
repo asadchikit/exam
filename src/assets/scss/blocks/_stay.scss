@@ -20,25 +20,16 @@
     padding-top: 20px;
   }
 
-  .stay__wrapper {
+  .stay_loop {
+    width: 400px;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    position: relative;
-    width: 400px;
+  }
+   
 
-    .stay__input {
-      width: 500px;
-      height: 45px;
-      padding: 10px;
-      box-sizing: border-box;
-      border: 2px solid rgba(0, 0, 0, 0.1);
-      border-radius: 6px;
-      margin-top: 20px;
-      outline: none;
-    }
-
-    .stay__btn {
+    .stay_btn {
       width: 90px;
       height: 32px;
       border-radius: 4px;
@@ -54,5 +45,18 @@
       right: 5px;
       top: 26px;
     }
-  }
+   .stay_input {
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-top: 20px;
+    outline: none;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 28px;
+    }
 }

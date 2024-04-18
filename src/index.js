@@ -5,7 +5,7 @@ import "./assets/css/main.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
-import { FavoriteProvider } from "./context/FavoriteContext";
+import { FavoriteProvider } from "./context/FavariteContext";
 
 ReactDOM.render(
   <React.StrictMode>
